@@ -1,0 +1,45 @@
+/* 컨텐트 박스를 보더 박스로 바꾸기 */
+/* * : 모든 속성이 선택 됨, 모든 속성과 가상 박스 속성도 보더 박스로 변경 */
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* HEADER */
+.header {
+  background-color: yellow;
+}
+
+/* MAIN */
+.main {
+  background-color: lime;
+}
+
+.hero-section {
+  background-color: aqua;
+}
+
+.main-content {
+  background-color: blue;
+  float: left;
+  width: 70%;
+}
+
+.side-content {
+  background-color: pink;
+  float: right;
+  width: 30%;
+}
+
+/* COTENT-INFO */
+.content-info {
+  background-color: green;
+}
+
+.links {
+  background-color: lightgreen;
+}
+
+.footer {
+  background-color: purple;
+}
