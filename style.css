@@ -4,27 +4,163 @@
 *::after {
   box-sizing: border-box;
 }
+html {
+  font-size: 10px;
+}
+body {
+  min-width: 1060px;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  font-family: Roboto, Avenir, sans-serif;
+}
+
+a {
+  /* 밑줄 없애기 */
+  text-decoration: none;
+}
 
 /* HEADER */
 .header {
-  background-color: yellow;
+  background-color: #0b4b33;
+  height: 55px;
+  padding: 15px 0 4px;
 }
 
+.container {
+  max-width: 1400px;
+  /* 가운데 정렬 */
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.container-float {
+  max-width: 1400px;
+  background-color: white;
+  /* 가운데 정렬 */
+  margin: 0 auto;
+  padding: 0 25px;
+  position: relative;
+}
+.container-float::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.logo {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: inherit;
+}
+
+.nav {
+  text-align: right;
+}
+.list {
+  /* 리스트 인라인 요소시 자동 간격 생김 해결책 */
+  margin: 0;
+  font-size: 0;
+}
+
+.list-item {
+  display: inline-block;
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+.list-item > a {
+  color: white;
+  display: block;
+  padding: 10px;
+}
+
+.list-item > a:hover {
+  color: #c9f0dd;
+}
 /* MAIN */
 .main {
-  background-color: lime;
 }
-
+/* hero-section */
 .hero-section {
-  background-color: aqua;
+  text-align: center;
+  padding: 50px 0;
+  border-bottom: 1px solid #cfe3dc;
 }
 
+.intro-desc {
+  width: 700px;
+  font-weight: 300;
+  font-size: 3.6rem;
+  margin: 40px auto 50px;
+  line-height: 1.3;
+}
+
+.cta {
+  display: block;
+  padding: 20px 50px;
+  margin: 0 auto 60px;
+  border-radius: 8px;
+  background-color: #4cb48c;
+  color: white;
+  width: 200px;
+  font-weight: 300;
+}
+.cta:hover {
+  background-color: #51be95;
+}
+/* main-content */
 .main-content {
-  background-color: blue;
+  background-color: white;
   float: left;
   width: 70%;
+  border-right: 1px solid #cfe3dc;
+}
+h2 {
+  margin-top: 40px;
+  background-color: white;
+  font-weight: 400;
+  font-size: 3rem;
+}
+.main-desc {
+  margin-bottom: 45px;
+}
+.mailing1 {
+  background-color: white;
+  float: left;
+  margin: 30;
+  width: 50%;
+}
+.mailing2 {
+  background-color: white;
+  float: right;
+  margin: 40;
+  width: 50%;
+}
+.mailing-title > a {
+  font-size: 1.8rem;
+  color: #4cb48c;
+}
+.mailing-title > a:hover {
+  color: #51be95;
+}
+.mailing-desc {
+  font-size: 1.4rem;
+}
+.mailing-desc > a {
+  color: #4cb48c;
 }
 
+.mailing-desc > a:hover {
+  color: #51be95;
+}
+
+.mailing-layout {
+  background-color: white;
+  height: 609px;
+}
 .side-content {
   background-color: pink;
   float: right;
@@ -34,12 +170,5 @@
 /* COTENT-INFO */
 .content-info {
   background-color: green;
-}
-
-.links {
-  background-color: lightgreen;
-}
-
-.footer {
-  background-color: purple;
+  clear: both;
 }
