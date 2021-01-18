@@ -150,10 +150,9 @@ h2 {
   font-size: 1.8rem;
   letter-spacing: -1px;
   color: #4cb48c;
+  margin-bottom: 15px;
 }
-h3 {
-  margin: 0px;
-}
+
 .mailing-title > a:hover {
   color: #51be95;
 }
@@ -207,15 +206,81 @@ input[type="email"] {
 }
 .mailing-layout {
   background-color: white;
-  height: 609px;
+  height: 700px;
 }
-
+/* side-content */
 .side-content {
-  background-color: pink;
+  background-color: white;
   float: right;
-  width: 30%;
+  width: 28%;
+  margin-left: 20px;
+}
+.side-cta {
+  width: 300px;
+  margin: 20px;
+  font-weight: 500;
+  padding: 20px 35px;
+}
+em {
+  color: #92e2c3;
+  font-style: normal;
+}
+.more {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #4cb48c;
+  text-transform: uppercase;
+}
+.container-side-cta {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
+.infos-title {
+  margin: 40px 0 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+  border-bottom: 1px solid #cfe3dc;
+  padding-bottom: 10px;
+}
+h3 > a {
+  font-size: 1.8rem;
+  letter-spacing: -1px;
+  color: #4cb48c;
+  margin-bottom: 15px;
+}
+
+h3 > a:hover {
+  color: #51be95;
+}
+
+.news-desc {
+  font-size: 1.4rem;
+  margin: 20px 0px;
+}
+.news-meta {
+  font-size: 1.4rem;
+  margin: 20px 0px 30px;
+  color: #959595;
+}
+span {
+  font-weight: 700;
+}
+.list-communities {
+  margin: 20px 0 40px 0;
+}
+.community-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 20px 0 30px 0px;
+  color: #4cb48c;
+}
+
+.community-desc {
+  font-size: 1.4rem;
+  color: #858585;
+  margin: 0;
+}
 /* COTENT-INFO */
 .content-info {
   background-color: green;
