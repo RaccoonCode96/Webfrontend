@@ -8,7 +8,7 @@ html {
   font-size: 10px;
 }
 body {
-  min-width: 1060px;
+  min-width: 800px;
   font-size: 1.8rem;
   line-height: 1.6;
   font-family: Roboto, Avenir, sans-serif;
@@ -86,7 +86,7 @@ a {
 /* hero-section */
 .hero-section {
   text-align: center;
-  padding: 50px 0;
+  padding: 43px 0;
   border-bottom: 1px solid #cfe3dc;
 }
 
@@ -123,31 +123,43 @@ h2 {
   background-color: white;
   font-weight: 400;
   font-size: 3rem;
+  margin-left: 20px;
 }
 .main-desc {
-  margin-bottom: 45px;
+  margin: 20px 30px 20px 20px;
 }
-.mailing1 {
+.mailing-layout ::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.mailing {
   background-color: white;
   float: left;
-  margin: 30;
-  width: 50%;
+  width: 42%;
 }
-.mailing2 {
-  background-color: white;
-  float: right;
-  margin: 40;
-  width: 50%;
+.mailing:first-child {
+  margin-right: 8%;
+  margin-left: 20px;
+}
+.mailing:last-child {
+  margin-right: 20px;
 }
 .mailing-title > a {
   font-size: 1.8rem;
+  letter-spacing: -1px;
   color: #4cb48c;
+}
+h3 {
+  margin: 0px;
 }
 .mailing-title > a:hover {
   color: #51be95;
 }
 .mailing-desc {
   font-size: 1.4rem;
+  margin: 0;
 }
 .mailing-desc > a {
   color: #4cb48c;
@@ -157,10 +169,47 @@ h2 {
   color: #51be95;
 }
 
+.mailing-form {
+  margin: 10px 0 30px;
+  position: relative;
+}
+.mailing-form > label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  background-color: gray;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  /* visibility: hidden; */
+  /* display: none; */
+}
+input[type="email"] {
+  width: 90%;
+  border: 1px solid #cfe3dc;
+  border-radius: 4px;
+  height: 3rem;
+  padding: 6px 30px 8px 10px;
+  margin-right: 30px;
+}
+.mailing-form-btn {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  border: 0;
+  background: transparent;
+  color: #4cb48c;
+  cursor: pointer;
+  font-weight: 500;
+}
+.mailing-form-btn :hover {
+  color: #51be95;
+}
 .mailing-layout {
   background-color: white;
   height: 609px;
 }
+
 .side-content {
   background-color: pink;
   float: right;
