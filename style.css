@@ -1,7 +1,6 @@
 /* 컨텐트 박스를 보더 박스로 바꾸기 */
 /* * : 모든 속성이 선택 됨, 모든 속성과 가상 박스 속성도 보더 박스로 변경 */
-*::before,
-*::after {
+* {
   box-sizing: border-box;
 }
 html {
@@ -22,15 +21,14 @@ a {
 /* HEADER */
 .header {
   background-color: #0b4b33;
-  height: 55px;
-  padding: 15px 0 4px;
+  height: 70px;
+  padding: 10px 20px 4px;
 }
 
 .container {
   max-width: 1400px;
   /* 가운데 정렬 */
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: 5px auto 0;
   position: relative;
 }
 
@@ -105,12 +103,13 @@ a {
   border-radius: 8px;
   background-color: #4cb48c;
   color: white;
-  width: 200px;
+  width: 300px;
   font-weight: 300;
 }
 .cta:hover {
   background-color: #51be95;
 }
+
 /* main-content */
 .main-content {
   background-color: white;
@@ -193,8 +192,8 @@ input[type="email"] {
 }
 .mailing-form-btn {
   position: absolute;
-  top: 10px;
-  right: 5px;
+  top: 5px;
+  right: 45px;
   border: 0;
   background: transparent;
   color: #4cb48c;
@@ -208,6 +207,7 @@ input[type="email"] {
   background-color: white;
   height: 700px;
 }
+
 /* side-content */
 .side-content {
   background-color: white;
@@ -216,8 +216,8 @@ input[type="email"] {
   margin-left: 20px;
 }
 .side-cta {
-  width: 300px;
-  margin: 20px;
+  width: 350px;
+  margin: 40px 0 20px;
   font-weight: 500;
   padding: 20px 35px;
 }
@@ -233,7 +233,7 @@ em {
 }
 .container-side-cta {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .infos-title {
